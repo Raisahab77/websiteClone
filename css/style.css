@@ -1,0 +1,351 @@
+/* css reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+/* logo */
+
+.logo{
+    display: flex;
+    margin-left:5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+.logo img{
+    margin-left: 19px;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-top: 38px;
+    margin-bottom: 5px;
+
+}
+
+/* Navigation bar */
+.nav{
+    display: flex;
+    padding: 12px;
+    margin-right: 10%;
+    margin-top: 26px;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.nav li a{
+
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.nav li{
+    margin-left: 45px;
+    /* border: 2px solid red; */
+}
+.nav li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 255, 106);
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav li a:hover::after{
+    width: 100%;
+}
+
+/* Home Section */
+
+.home{
+    width: 100%;
+    height: 500px;
+    background: rgba(0,0,0,0.7)url('../src/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.home h1{
+    color:white;
+    padding:67px 0px 0px 121px ;
+    font-size: 55px;
+}
+.home p{
+    color: white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left:121px ;
+}
+.home p b{
+    color: rgb(0, 255, 106);
+}
+
+.enquireNow{
+    width: 130px;
+    border: 3px solid rgb(0, 255, 106);
+    color: rgb(0, 255, 106);
+    background: rgba(0,0,0,0.1);
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 121px;
+    border-radius: 12px;
+}
+
+
+.enquireNow:hover{
+    color:white;
+    background-color: rgb(0, 255, 106);
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* About us section */
+
+.about h1{
+    margin: 35px;
+}
+.box{
+    display: flex;
+    margin: 30px;
+}
+
+.boxFirst img{
+    width:100px;
+    
+
+}
+.boxFirst{
+    width: 33%;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 255, 106);
+    border-radius: 20px;
+    padding: 20px;
+}
+.boxSecond img{
+    width:100px;
+
+}
+.boxSecond{
+    margin: 10px;
+    width: 33%;
+    border: 2px solid rgb(0, 255, 106);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.boxThird img{
+    width:100px;
+
+}
+.boxThird{
+    margin: 10px;
+    width: 33%;
+    border: 2px solid rgb(0, 255, 106);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Projects section */
+
+.projects h1{
+    margin: 35px;
+}
+
+.completeProjectList{
+    display: flex;
+    justify-content: start;
+    border: 2px solid red;
+}
+.left{
+    width: 60%;
+    border: 2px solid rgb(0, 255, 106);
+}
+.left h1{
+    font-size: 55px;
+    color: rgb(0, 255, 106);
+    text-align: center;
+}
+
+.left p{
+    font-size: 20px;
+}
+
+.right{
+    width: 40%;
+    /* margin: auto; */
+    border: 2px solid black;
+}
+
+.right img{
+    width:100%;
+    height: 100%;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    
+}
+.gitBtn{
+    width: 150px;
+    background-color: black;
+    font-size:20px ;
+    margin-top: 5%;
+    margin-left: 25%;
+    padding: 5px;
+    cursor: pointer;
+
+
+}
+.linkedinBtn{
+    width: 150px;
+    font-size:20px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgb(33, 136, 233);
+    cursor: pointer;
+
+}
+
+/* Contact us section */
+
+.contactus h1{
+    margin: 20px;
+}
+
+.contactus p{
+    font-size: 20px;
+}
+
+.contactForm{
+    display: flex;
+    margin-top: 40px;
+}
+
+.contactForm label{
+    margin-left: 20px;
+}
+.contactForm input{
+    width: 70%;
+    margin-top: 2px;
+}
+
+.contactLeft{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 60%;
+}
+
+.contactRight{
+    width: 30%;
+    margin-bottom: 7px;
+}
+.contactRight img{
+    width:100%;
+    height: auto;
+}
+
+/* Footer Of the website */
+
+footer{
+    background-color: rgb(21, 0, 80);
+    color: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* utility classes */
+
+.sectionName{
+    display: block;
+    color: rgb(0, 255, 106);
+    font-size: 55px;
+    text-align: center;
+}
+
+
+/* Responsive Desine */
+
+@media (max-width:900px) {
+    .sectionName{
+        font-size: 30px;
+    }
+
+    .home h1{
+        font-size: 30px;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .left h1{
+        font-size: 30px;
+
+    }
+    .left p{
+        font-size: 15px;
+    }
+    .box{
+        flex-direction: column;
+        /* margin: auto; */
+    }
+    .boxFirst{
+        width: 90%;
+    }
+    .boxSecond{
+        width: 90%;
+    }
+    .boxThird{
+        width: 90%;
+    }
+    .gitBtn{
+        width: 100px;
+        background-color: black;
+        font-size:15px ;
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-bottom:5%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .linkedinBtn{
+        width: 100px;
+        font-size:15px;
+        margin-left: 10px;
+        padding: 5px;
+        background-color: rgb(33, 136, 233);
+        cursor: pointer;
+    }
+    .completeProjectList{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
